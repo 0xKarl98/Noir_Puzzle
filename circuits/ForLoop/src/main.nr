@@ -5,8 +5,15 @@
 
 // See here: https://noir-lang.org/language_concepts/control_flow/#loops
 
-fn main() -> pub Field {
-  // your code here
+// take array's each elements as input , and then add them together 
+fn main(x : [ Field; 3 ]) -> pub Field {
+   
+   let mut result= 0 ;
+   for i in 0..3{
+     result += x[i];
+   }
+   result
+
 }
 
 ////////////////////

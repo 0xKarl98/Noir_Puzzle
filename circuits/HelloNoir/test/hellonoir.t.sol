@@ -14,7 +14,6 @@ contract HelloNoir is Test {
         ultraverifier = new UltraVerifier();
         correct_input[0] = bytes32(0x0000000000000000000000000000000000000000000000000000000000000003);
         wrong_input[0] = bytes32(0x0000000000000000000000000000000000000000000000000000000000000004);
-
     }
 
      function test_correct_solution() public {

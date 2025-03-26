@@ -1,5 +1,6 @@
 [package]
-authors = [""]
-compiler_version = "0.5.1"
-
+name = "HelloNoir"
+type = "bin" 
+authors = ["RareSkills"]
+compiler_version = "1.0.0"
 [dependencies]

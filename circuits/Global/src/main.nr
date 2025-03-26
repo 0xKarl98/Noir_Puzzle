@@ -4,10 +4,15 @@
 
 // See here: https://noir-lang.org/language_concepts/mutability/#globals
 
+//by using comptime specifier, we can significantly reduce the constraints 
+//which in normal need to be generated at runtime 
+comptime mut global COUNTER: Field = 10;
 fn main(x : Field) -> pub Field {
-  // your code here
-  globalVar * x
+
+   COUNTER * x 
+  
 }
+
 
 ////////////////////
 //     TESTS      //
