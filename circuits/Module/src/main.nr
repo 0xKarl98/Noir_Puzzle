@@ -16,9 +16,20 @@
 // 'nargo test' inside this directory.
 
 // See here: https://noir-lang.org/modules_packages_crates/modules/
-
+mod math;
+use crate::math::{add,sub,mul,div};
 fn main(x : Field, y : Field, op : Field) -> pub Field {
-    // your code here
+    if op == 0 {
+        add(x, y)
+    } else if op == 1 {
+        sub(x, y)
+    } else if op == 2 {
+        mul(x, y)
+    } else if op == 3 {
+        div(x, y)
+    } else {
+        0
+    }
 }
 
 ////////////////////

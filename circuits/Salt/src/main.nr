@@ -7,8 +7,14 @@
 // Note: An example of importing the standard library can be seen from the link below.
 //       https://noir-lang.org/standard_library/logging
 
+use dep::mimc;
 fn main(a : Field, salt : Field) -> pub Field {
-  // your code here
+  // Using the mimc library to hash the two input values
+  // MiMC libraries typically provide a hash_2 function for two inputs
+  let input = [a, salt];
+  let mut result = 0 ;
+  result =  mimc::mimc_bn254(input);
+  result
 }
 
 ////////////////////
