@@ -4,7 +4,14 @@
 // first. Then, perform the comparison and return the result.
 
 fn main(x : Field, y : pub Field) -> pub bool {
-  // your code here
+    let mut x_u32 = x as u32 ;
+    let mut y_u32: u32 = y as u32 ;
+    let mut result = if x_u32 > y_u32  {
+       true
+    } else {
+       false
+    };
+    result 
 }
 
 ////////////////////
